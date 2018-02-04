@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var jokeOneA: UIView!
+    @IBOutlet weak var jokeOneQ: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
     }
+    @IBAction func jokeOneQF(_ sender: UIButton) {
+        UIView.transition(from: jokeOneQ, to:  jokeOneA, duration: 0.5, options: .transitionFlipFromRight)
+    }
+    
+
+    
+//               UIView.transition(from: jokeOneQ, to: jokeOneA, duration: 0.5, options: .transitionFlipFromRight)
 
 }
 
