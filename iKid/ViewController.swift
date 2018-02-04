@@ -41,8 +41,18 @@ class ViewController: UIViewController {
         
     }
     
-    
     // Joke Tab Three
+    
+    @IBOutlet weak var jokeThreeA: UIView!
+    @IBOutlet weak var jokeThreeQ: UIView!
+    var threeFlip = false
+    
+    @IBAction func jokeThreeFlip(_ sender: UIButton) {
+        threeFlip = !threeFlip
+        let fromView = threeFlip ? jokeThreeQ : jokeThreeA
+        let toView = threeFlip ? jokeThreeA : jokeThreeQ
+        UIView.transition(from: fromView!, to: toView!, duration: 0.5, options: [.transitionFlipFromRight, .showHideTransitionViews])
+    }
     
 }
 
