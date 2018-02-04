@@ -30,9 +30,12 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.59421072243320805" green="0.92290761716649738" blue="0.90088375465372361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="jokeOneQF:" destination="I4c-CP-VGZ" eventType="touchUpInside" id="xfe-CE-WFW"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 1 Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-d9-2Ur">
-                                                <rect key="frame" x="116" y="279" width="110" height="21"/>
+                                                <rect key="frame" x="116" y="262" width="110" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -54,7 +57,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 1 Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-ya-4iF">
-                                                <rect key="frame" x="110" y="279" width="122" height="21"/>
+                                                <rect key="frame" x="110" y="262" width="122" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -78,37 +81,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iO6-hK-hhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237.59999999999999" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="135" y="-215"/>
         </scene>
-        <!--Joke 3-->
+        <!--Joke 2-->
         <scene sceneID="83j-jM-YDu">
             <objects>
-                <viewController id="flM-eQ-ijc" sceneMemberID="viewController">
+                <viewController title="Joke 2" id="flM-eQ-ijc" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ta-H4-a91">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St6-MK-vXb">
-                                <rect key="frame" x="166" y="323" width="51" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gai-Ec-z7K">
+                                <rect key="frame" x="16" y="56" width="343" height="539"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-nX-s9h">
-                                <rect key="frame" x="318" y="547" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="----&gt;"/>
-                            </button>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95m-HP-Nfz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="539"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTe-3E-wVg">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="539"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.38006676020000002" green="0.78670441290000004" blue="0.76505801559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="jokeTwoFlip:" destination="flM-eQ-ijc" eventType="touchUpInside" id="n5C-Sd-qE7"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 2 Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tW-nW-wEx">
+                                                <rect key="frame" x="115" y="259" width="112" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ExH-UW-8LS">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="539"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-sR-VoC">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="539"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.89373536310000001" blue="0.73100678569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="jokeTwoFlip:" destination="flM-eQ-ijc" eventType="touchUpInside" id="kR7-WU-kpE"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 2 Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St6-MK-vXb">
+                                                <rect key="frame" x="109" y="259" width="124" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fJD-st-jQB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Joke 3" id="gYA-LT-b72"/>
+                    <tabBarItem key="tabBarItem" title="Joke 2" id="gYA-LT-b72"/>
+                    <connections>
+                        <outlet property="jokeTwoA" destination="95m-HP-Nfz" id="QpW-lj-wcb"/>
+                        <outlet property="jokeTwoQ" destination="ExH-UW-8LS" id="8xj-7z-ydt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srg-py-tWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="119"/>
+            <point key="canvasLocation" x="785" y="-215"/>
+        </scene>
+        <!--Joke 3-->
+        <scene sceneID="80j-qZ-2tC">
+            <objects>
+                <viewController id="BfV-Up-FPz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b6t-FM-Xgk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pHb-Qt-pAL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Joke 3" id="GRJ-Y3-GaU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n43-ia-U0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1433" y="-215"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="anT-sA-u1w">
@@ -123,6 +183,7 @@
                     <connections>
                         <segue destination="I4c-CP-VGZ" kind="relationship" relationship="viewControllers" id="P5N-JM-KVf"/>
                         <segue destination="flM-eQ-ijc" kind="relationship" relationship="viewControllers" id="84Y-HM-5K9"/>
+                        <segue destination="BfV-Up-FPz" kind="relationship" relationship="viewControllers" id="iPX-U9-Sxy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3n-XF-Cpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
