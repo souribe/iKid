@@ -80,6 +80,7 @@
 				B2AB096C2026F32E007C26CF /* iKid */,
 				B2AB09812026F32E007C26CF /* iKidTests */,
 				B2AB098C2026F32E007C26CF /* iKidUITests */,
+				B2AB098D2026F32E007C26CF /* iKidUITests.swift */,
 				B2AB096B2026F32E007C26CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,7 +120,6 @@
 		B2AB098C2026F32E007C26CF /* iKidUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B2AB098D2026F32E007C26CF /* iKidUITests.swift */,
 				B2AB098F2026F32E007C26CF /* Info.plist */,
 			);
 			path = iKidUITests;
