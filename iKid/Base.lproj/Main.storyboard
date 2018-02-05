@@ -217,7 +217,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tK7-8q-8va"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Good Joke" id="G5m-8v-tKE"/>
+                    <tabBarItem key="tabBarItem" title="Knock Knock Joke" id="G5m-8v-tKE"/>
                     <connections>
                         <outlet property="jokeOneFifth" destination="trq-X9-AY0" id="Wa1-mh-Zlq"/>
                         <outlet property="jokeOneFirst" destination="EjI-Bn-M6O" id="bdK-ZI-PGH"/>
@@ -253,13 +253,14 @@
                                                     <action selector="jokeTwoFlip:" destination="flM-eQ-ijc" eventType="touchUpInside" id="n5C-Sd-qE7"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botpic.png" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-fG-YGP">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botpic.png" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-fG-YGP">
                                                 <rect key="frame" x="8" y="186" width="327" height="172"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="L8O-NY-leB"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://www.facebook.com/8memesofficial/posts/386127198534622" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITh-Hy-Imb">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="https://www.facebook.com/8memesofficial/posts/386127198534622" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITh-Hy-Imb">
                                                 <rect key="frame" x="8" y="366" width="327" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -269,7 +270,13 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="aTe-3E-wVg" secondAttribute="bottom" constant="8" id="0iJ-Lc-0bX"/>
                                             <constraint firstAttribute="trailing" secondItem="aTe-3E-wVg" secondAttribute="trailing" constant="8" id="9bD-t4-Qbi"/>
+                                            <constraint firstItem="3d5-fG-YGP" firstAttribute="trailing" secondItem="aTe-3E-wVg" secondAttribute="trailing" id="IT4-Tk-zSb"/>
+                                            <constraint firstItem="3d5-fG-YGP" firstAttribute="leading" secondItem="95m-HP-Nfz" secondAttribute="leadingMargin" id="ctU-Wa-nEQ"/>
                                             <constraint firstItem="aTe-3E-wVg" firstAttribute="leading" secondItem="95m-HP-Nfz" secondAttribute="leading" constant="196" id="cxd-KV-5eJ"/>
+                                            <constraint firstItem="3d5-fG-YGP" firstAttribute="centerY" secondItem="95m-HP-Nfz" secondAttribute="centerY" id="gAN-p9-7ZJ"/>
+                                            <constraint firstItem="ITh-Hy-Imb" firstAttribute="top" secondItem="3d5-fG-YGP" secondAttribute="bottom" constant="8" symbolic="YES" id="vzl-lO-445"/>
+                                            <constraint firstItem="3d5-fG-YGP" firstAttribute="trailing" secondItem="ITh-Hy-Imb" secondAttribute="trailing" id="wfO-MP-ugv"/>
+                                            <constraint firstItem="3d5-fG-YGP" firstAttribute="leading" secondItem="ITh-Hy-Imb" secondAttribute="leading" id="xpA-0c-LN0"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ExH-UW-8LS">
@@ -284,20 +291,20 @@
                                                     <action selector="jokeTwoFlip:" destination="flM-eQ-ijc" eventType="touchUpInside" id="kR7-WU-kpE"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toppic.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tiu-H2-Pxa">
-                                                <rect key="frame" x="51" y="208" width="240" height="128"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toppic.png" translatesAutoresizingMaskIntoConstraints="NO" id="G8J-6h-msK">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="U9j-tD-JqM"/>
+                                                    <constraint firstAttribute="height" constant="172" id="cOR-6k-r2J"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.89373536310000001" blue="0.73100678569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="G8J-6h-msK" firstAttribute="centerY" secondItem="ExH-UW-8LS" secondAttribute="centerY" id="8yU-ci-N3r"/>
                                             <constraint firstAttribute="trailing" secondItem="CfM-sR-VoC" secondAttribute="trailing" constant="8" id="Lw1-Cx-vJS"/>
                                             <constraint firstAttribute="bottom" secondItem="CfM-sR-VoC" secondAttribute="bottom" constant="8" id="Zp9-02-jiT"/>
-                                            <constraint firstItem="Tiu-H2-Pxa" firstAttribute="leading" secondItem="ExH-UW-8LS" secondAttribute="leading" constant="51" id="cay-Cb-aB1"/>
-                                            <constraint firstItem="Tiu-H2-Pxa" firstAttribute="centerY" secondItem="ExH-UW-8LS" secondAttribute="centerY" id="kfM-eA-Tk5"/>
-                                            <constraint firstItem="Tiu-H2-Pxa" firstAttribute="centerX" secondItem="ExH-UW-8LS" secondAttribute="centerX" id="rVc-Ns-EV7"/>
+                                            <constraint firstItem="G8J-6h-msK" firstAttribute="leading" secondItem="ExH-UW-8LS" secondAttribute="leadingMargin" id="aWb-5w-JjV"/>
+                                            <constraint firstItem="G8J-6h-msK" firstAttribute="trailing" secondItem="CfM-sR-VoC" secondAttribute="trailing" id="riy-Wo-OuO"/>
                                             <constraint firstItem="CfM-sR-VoC" firstAttribute="leading" secondItem="ExH-UW-8LS" secondAttribute="leading" constant="196" id="yWc-1C-fsM"/>
                                         </constraints>
                                     </view>
@@ -332,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srg-py-tWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="-215"/>
+            <point key="canvasLocation" x="716" y="-217.24137931034485"/>
         </scene>
         <!--Dad Joke-->
         <scene sceneID="80j-qZ-2tC">
