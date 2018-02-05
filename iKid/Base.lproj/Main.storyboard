@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,9 +25,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trq-X9-AY0">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLb-Kj-I9l">
-                                                <rect key="frame" x="150" y="262" width="42" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLb-Kj-I9l">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="Hsi-dj-f6n"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -43,17 +46,22 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.89373536310000001" blue="0.73100678569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="FLb-Kj-I9l" firstAttribute="trailing" secondItem="AHa-f0-4Zp" secondAttribute="trailing" id="9GE-YC-ZOb"/>
                                             <constraint firstAttribute="trailing" secondItem="AHa-f0-4Zp" secondAttribute="trailing" constant="8" id="JQm-Io-0aR"/>
                                             <constraint firstAttribute="bottom" secondItem="AHa-f0-4Zp" secondAttribute="bottom" constant="8" id="LMb-Ic-jMl"/>
                                             <constraint firstItem="AHa-f0-4Zp" firstAttribute="leading" secondItem="trq-X9-AY0" secondAttribute="leading" constant="196" id="NLo-kW-V4D"/>
+                                            <constraint firstItem="FLb-Kj-I9l" firstAttribute="centerY" secondItem="trq-X9-AY0" secondAttribute="centerY" id="REu-gQ-E0I"/>
+                                            <constraint firstItem="FLb-Kj-I9l" firstAttribute="leading" secondItem="trq-X9-AY0" secondAttribute="leadingMargin" id="tTd-zR-cbK"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v77-WY-d4z">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke cont 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fz1-3D-Z2r">
-                                                <rect key="frame" x="127" y="262" width="89" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke cont 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fz1-3D-Z2r">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="Ca6-nb-qs8"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -70,7 +78,10 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.38006676020000002" green="0.78670441290000004" blue="0.76505801559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="Fz1-3D-Z2r" firstAttribute="trailing" secondItem="9YJ-WH-tTY" secondAttribute="trailing" id="1Fx-lJ-YmZ"/>
                                             <constraint firstAttribute="bottom" secondItem="9YJ-WH-tTY" secondAttribute="bottom" constant="8" id="K78-B6-PVz"/>
+                                            <constraint firstItem="Fz1-3D-Z2r" firstAttribute="leading" secondItem="v77-WY-d4z" secondAttribute="leadingMargin" id="Q9W-Pd-cTU"/>
+                                            <constraint firstItem="Fz1-3D-Z2r" firstAttribute="centerY" secondItem="v77-WY-d4z" secondAttribute="centerY" id="aMg-dX-y6C"/>
                                             <constraint firstAttribute="trailing" secondItem="9YJ-WH-tTY" secondAttribute="trailing" constant="8" id="n0i-Q5-2FI"/>
                                             <constraint firstItem="9YJ-WH-tTY" firstAttribute="leading" secondItem="v77-WY-d4z" secondAttribute="leading" constant="196" id="nEC-sy-sYO"/>
                                         </constraints>
@@ -78,9 +89,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tV2-jA-idE">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke cont" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcl-oQ-w5I">
-                                                <rect key="frame" x="134" y="262" width="75" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke cont" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcl-oQ-w5I">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="pht-bj-Nw5"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -99,15 +112,20 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="rKe-vf-N6M" secondAttribute="trailing" constant="8" id="7Ev-Uy-uoj"/>
                                             <constraint firstAttribute="bottom" secondItem="rKe-vf-N6M" secondAttribute="bottom" constant="8" id="8Or-PQ-X37"/>
+                                            <constraint firstItem="kcl-oQ-w5I" firstAttribute="centerY" secondItem="tV2-jA-idE" secondAttribute="centerY" id="Q43-ys-35f"/>
                                             <constraint firstItem="rKe-vf-N6M" firstAttribute="leading" secondItem="tV2-jA-idE" secondAttribute="leading" constant="196" id="r2H-HO-4ce"/>
+                                            <constraint firstItem="kcl-oQ-w5I" firstAttribute="trailing" secondItem="rKe-vf-N6M" secondAttribute="trailing" id="x1e-nZ-8B1"/>
+                                            <constraint firstItem="kcl-oQ-w5I" firstAttribute="leading" secondItem="tV2-jA-idE" secondAttribute="leadingMargin" id="xxd-hs-U4i"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUV-TP-rxQ">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 1 Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-d9-2Ur">
-                                                <rect key="frame" x="116" y="262" width="110" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke 1 Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-d9-2Ur">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="OwZ-m2-eBC"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -126,7 +144,10 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="EiU-es-hJ4" secondAttribute="trailing" constant="8" id="Lbb-9j-Pvx"/>
                                             <constraint firstItem="EiU-es-hJ4" firstAttribute="leading" secondItem="QUV-TP-rxQ" secondAttribute="leading" constant="196" id="Lh0-kC-xPr"/>
+                                            <constraint firstItem="Jyi-d9-2Ur" firstAttribute="trailing" secondItem="EiU-es-hJ4" secondAttribute="trailing" id="P8E-Hg-EN5"/>
                                             <constraint firstAttribute="bottom" secondItem="EiU-es-hJ4" secondAttribute="bottom" constant="8" id="QhD-DX-no7"/>
+                                            <constraint firstItem="Jyi-d9-2Ur" firstAttribute="leading" secondItem="QUV-TP-rxQ" secondAttribute="leadingMargin" id="lCr-i9-hmK"/>
+                                            <constraint firstItem="Jyi-d9-2Ur" firstAttribute="centerY" secondItem="QUV-TP-rxQ" secondAttribute="centerY" id="xJP-TN-1iT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjI-Bn-M6O">
@@ -141,9 +162,11 @@
                                                     <action selector="jokeOneFlip:" destination="I4c-CP-VGZ" eventType="touchUpInside" id="hFM-xA-q1p"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's the difference between a hippo and a zippo?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-ya-4iF">
-                                                <rect key="frame" x="8" y="186" width="327" height="173"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the difference between a hippo and a zippo?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-ya-4iF">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="173" id="fMV-CA-BrK"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -153,7 +176,10 @@
                                         <constraints>
                                             <constraint firstItem="Xm6-rN-87K" firstAttribute="leading" secondItem="EjI-Bn-M6O" secondAttribute="leading" constant="196" id="BIv-0C-Cgc"/>
                                             <constraint firstAttribute="trailing" secondItem="Xm6-rN-87K" secondAttribute="trailing" constant="8" id="DVD-vv-Ebc"/>
+                                            <constraint firstItem="Oxm-ya-4iF" firstAttribute="leading" secondItem="EjI-Bn-M6O" secondAttribute="leadingMargin" id="HMj-hA-uwJ"/>
                                             <constraint firstAttribute="bottom" secondItem="Xm6-rN-87K" secondAttribute="bottom" constant="8" id="Up3-zk-5t0"/>
+                                            <constraint firstItem="Oxm-ya-4iF" firstAttribute="centerY" secondItem="EjI-Bn-M6O" secondAttribute="centerY" id="mLd-qT-uVy"/>
+                                            <constraint firstItem="Oxm-ya-4iF" firstAttribute="trailing" secondItem="Xm6-rN-87K" secondAttribute="trailing" id="xj5-JD-5C3"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -316,26 +342,31 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R74-IA-qvz">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 3 Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cla-64-qtV">
-                                                <rect key="frame" x="109" y="256" width="125" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-EP-N4k">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-EP-N4k">
                                                 <rect key="frame" x="196" y="506" width="139" height="30"/>
-                                                <state key="normal" title="Back">
+                                                <state key="normal" title="Back ---&gt;">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="jokeThreeFlip:" destination="BfV-Up-FPz" eventType="touchUpInside" id="rIW-lE-HBU"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 Cent featuring Nickelback." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cla-64-qtV">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="8q7-iA-aRW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.38006676020000002" green="0.78670441290000004" blue="0.76505801559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="cla-64-qtV" firstAttribute="centerY" secondItem="R74-IA-qvz" secondAttribute="centerY" id="8QE-VP-RSM"/>
                                             <constraint firstAttribute="bottom" secondItem="m5d-EP-N4k" secondAttribute="bottom" constant="8" id="PEQ-fU-LMn"/>
+                                            <constraint firstItem="cla-64-qtV" firstAttribute="leading" secondItem="R74-IA-qvz" secondAttribute="leadingMargin" id="YLt-z1-dob"/>
+                                            <constraint firstItem="cla-64-qtV" firstAttribute="trailing" secondItem="m5d-EP-N4k" secondAttribute="trailing" id="gyg-sK-rvi"/>
                                             <constraint firstAttribute="trailing" secondItem="m5d-EP-N4k" secondAttribute="trailing" constant="8" id="kZv-3M-szu"/>
                                             <constraint firstItem="m5d-EP-N4k" firstAttribute="leading" secondItem="R74-IA-qvz" secondAttribute="leading" constant="196" id="uy2-qF-BJc"/>
                                         </constraints>
@@ -343,26 +374,31 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3l-Jk-mcA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="544"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke 3 Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPl-Gb-oZb">
-                                                <rect key="frame" x="109" y="258" width="125" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtF-pK-u0h">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtF-pK-u0h">
                                                 <rect key="frame" x="196" y="506" width="139" height="30"/>
-                                                <state key="normal" title="Next">
+                                                <state key="normal" title="Next ---&gt;   ">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="jokeThreeFlip:" destination="BfV-Up-FPz" eventType="touchUpInside" id="5RY-fr-d5q"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What concert costs 45 cents?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPl-Gb-oZb">
+                                                <rect key="frame" x="8" y="186" width="327" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="T19-ub-MMo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.89373536310000001" blue="0.73100678569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="GPl-Gb-oZb" firstAttribute="centerY" secondItem="N3l-Jk-mcA" secondAttribute="centerY" id="0YT-Wm-jEt"/>
+                                            <constraint firstItem="GPl-Gb-oZb" firstAttribute="trailing" secondItem="TtF-pK-u0h" secondAttribute="trailing" id="BKT-zO-zya"/>
                                             <constraint firstItem="TtF-pK-u0h" firstAttribute="leading" secondItem="N3l-Jk-mcA" secondAttribute="leading" constant="196" id="EY5-xA-MEb"/>
+                                            <constraint firstItem="GPl-Gb-oZb" firstAttribute="leading" secondItem="N3l-Jk-mcA" secondAttribute="leadingMargin" id="W7F-nH-4ye"/>
                                             <constraint firstAttribute="trailing" secondItem="TtF-pK-u0h" secondAttribute="trailing" constant="8" id="edg-Mp-k31"/>
                                             <constraint firstAttribute="bottom" secondItem="TtF-pK-u0h" secondAttribute="bottom" constant="8" id="jLu-JL-Z1q"/>
                                         </constraints>
