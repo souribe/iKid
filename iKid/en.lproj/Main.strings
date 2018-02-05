@@ -1,0 +1,66 @@
+
+/* Class = "UIButton"; normalTitle = "Next --->"; ObjectID = "9YJ-WH-tTY"; */
+"9YJ-WH-tTY.normalTitle" = "Next --->";
+
+/* Class = "UIButton"; normalTitle = "Back to beginning   "; ObjectID = "AHa-f0-4Zp"; */
+"AHa-f0-4Zp.normalTitle" = "Back to beginning   ";
+
+/* Class = "UIButton"; normalTitle = "Next --->"; ObjectID = "CfM-sR-VoC"; */
+"CfM-sR-VoC.normalTitle" = "Next --->";
+
+/* Class = "UIButton"; normalTitle = "Next --->"; ObjectID = "EiU-es-hJ4"; */
+"EiU-es-hJ4.normalTitle" = "Next --->";
+
+/* Class = "UILabel"; text = "Bless you"; ObjectID = "FLb-Kj-I9l"; */
+"FLb-Kj-I9l.text" = "Bless you";
+
+/* Class = "UILabel"; text = "Etch who?"; ObjectID = "Fz1-3D-Z2r"; */
+"Fz1-3D-Z2r.text" = "Etch who?";
+
+/* Class = "UITabBarItem"; title = "Good Joke"; ObjectID = "G5m-8v-tKE"; */
+"G5m-8v-tKE.title" = "Good Joke";
+
+/* Class = "UILabel"; text = "What concert costs 45 cents?"; ObjectID = "GPl-Gb-oZb"; */
+"GPl-Gb-oZb.text" = "What concert costs 45 cents?";
+
+/* Class = "UITabBarItem"; title = "Dad Joke"; ObjectID = "GRJ-Y3-GaU"; */
+"GRJ-Y3-GaU.title" = "Dad Joke";
+
+/* Class = "UIViewController"; title = "Joke 1"; ObjectID = "I4c-CP-VGZ"; */
+"I4c-CP-VGZ.title" = "Joke 1";
+
+/* Class = "UILabel"; text = "https://www.facebook.com/8memesofficial/posts/386127198534622"; ObjectID = "ITh-Hy-Imb"; */
+"ITh-Hy-Imb.text" = "https://www.facebook.com/8memesofficial/posts/386127198534622";
+
+/* Class = "UILabel"; text = "Who's there?"; ObjectID = "Jyi-d9-2Ur"; */
+"Jyi-d9-2Ur.text" = "Who's there?";
+
+/* Class = "UILabel"; text = "Knock knock"; ObjectID = "Oxm-ya-4iF"; */
+"Oxm-ya-4iF.text" = "Knock knock";
+
+/* Class = "UIButton"; normalTitle = "Next --->   "; ObjectID = "TtF-pK-u0h"; */
+"TtF-pK-u0h.normalTitle" = "Next --->   ";
+
+/* Class = "UIButton"; normalTitle = "Next --->"; ObjectID = "Xm6-rN-87K"; */
+"Xm6-rN-87K.normalTitle" = "Next --->";
+
+/* Class = "UIButton"; normalTitle = "Back --->"; ObjectID = "aTe-3E-wVg"; */
+"aTe-3E-wVg.normalTitle" = "Back --->";
+
+/* Class = "UILabel"; text = "50 Cent featuring Nickelback."; ObjectID = "cla-64-qtV"; */
+"cla-64-qtV.text" = "50 Cent featuring Nickelback.";
+
+/* Class = "UIViewController"; title = "Joke 2"; ObjectID = "flM-eQ-ijc"; */
+"flM-eQ-ijc.title" = "Joke 2";
+
+/* Class = "UITabBarItem"; title = "Pun"; ObjectID = "gYA-LT-b72"; */
+"gYA-LT-b72.title" = "Pun";
+
+/* Class = "UILabel"; text = "Etch"; ObjectID = "kcl-oQ-w5I"; */
+"kcl-oQ-w5I.text" = "Etch";
+
+/* Class = "UIButton"; normalTitle = "Back --->"; ObjectID = "m5d-EP-N4k"; */
+"m5d-EP-N4k.normalTitle" = "Back --->";
+
+/* Class = "UIButton"; normalTitle = "Next --->"; ObjectID = "rKe-vf-N6M"; */
+"rKe-vf-N6M.normalTitle" = "Next --->";
